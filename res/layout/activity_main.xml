@@ -1,0 +1,185 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0,1,2,3"
+    tools:context=".MainActivity" >
+	
+    <TableRow>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:gravity="center"
+			android:textSize="14dp"
+			android:textColor="#000"
+			android:textStyle="bold"
+			android:text="ListViewで使うArrayAdapterの使用例"
+			android:layout_span="4" />
+	</TableRow>
+	
+    <TableRow>
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:gravity="center"
+			android:textSize="10dp"
+			android:textColor="#000"
+			android:text="上３つが既存のArrayAdapter、下４つが独自のArrayAdapterを定義する"
+			android:layout_span="4" />
+	</TableRow>
+
+    <TableRow>
+        <TextView
+            style="@style/header"
+            android:text="Adapterの型" />
+        
+        <TextView
+            style="@style/header"
+            android:text="継承元Adapter" />
+        
+        <TextView
+            style="@style/header"
+            android:text="その他" />
+        
+        <TextView
+            style="@style/header"
+            android:text="実行結果" />
+    </TableRow>
+	
+    <TableRow>
+		<TextView
+			style="@style/description"
+			android:text="String" />
+				
+		<TextView
+		    style="@style/description"
+		    android:text="N/A" />
+		
+		<TextView
+		    style="@style/description"
+		    android:text="配列かリストを渡す" />
+	
+		<Button
+		    style="@style/button"
+		    android:id="@+id/btnStrAdapter"
+		    android:text="Go!" />
+	</TableRow>
+	
+    <TableRow>
+		<TextView
+			style="@style/description"
+			android:text="String" />
+				
+		<TextView
+		    style="@style/description"
+		    android:text="N/A" />
+		
+		<TextView
+		    style="@style/description"
+		    android:text="toString()で一括表示" />
+	
+		<Button
+		    style="@style/button"
+		    android:id="@+id/btnStrToString"
+		    android:text="Go!" />
+	</TableRow>
+	
+    <TableRow>
+		<TextView
+			style="@style/description"
+			android:text="Book" />
+				
+		<TextView
+		    style="@style/description"
+		    android:text="N/A" />
+		
+		<TextView
+		    style="@style/description"
+		    android:text="引数で表示IDを指定" />
+	
+		<Button
+		    style="@style/button"
+		    android:id="@+id/btnBookArg"
+		    android:text="Go!" />
+	</TableRow>
+	
+    <TableRow>
+		<TextView
+			style="@style/description"
+			android:text="Book" />
+				
+		<TextView
+		    style="@style/description"
+		    android:text="BaseAdapter" />
+		
+		<TextView
+		    style="@style/description"
+		    android:text="インナークラス" />
+		
+		<Button
+		    style="@style/button"
+		    android:id="@+id/btnBookBaseInner"
+		    android:text="Go!" />
+	</TableRow>
+	
+    <TableRow>
+		<TextView
+			style="@style/description"
+			android:text="Book" />
+				
+		<TextView
+		    style="@style/description"
+		    android:text="BaseAdapter" />
+		
+		<TextView
+		    style="@style/description"
+		    android:text="外部クラス" />
+	
+		<Button
+		    style="@style/button"
+		    android:id="@+id/btnBookBaseExt"
+		    android:text="Go!" />
+	</TableRow>
+	
+    <TableRow>
+		<TextView
+			style="@style/description"
+			android:text="Book" />
+				
+		<TextView
+		    style="@style/description"
+		    android:text="ArrayAdapter" />
+		
+		<TextView
+		    style="@style/description"
+		    android:text="インナークラス" />
+	
+		<Button
+		    style="@style/button"
+		    android:id="@+id/btnBookArrInner"
+		    android:text="Go!" />
+	</TableRow>
+	
+    <TableRow>
+		<TextView
+			style="@style/description"
+			android:text="Book" />
+				
+		<TextView
+		    style="@style/description"
+		    android:text="ArrayAdapter" />
+		
+		<TextView
+		    style="@style/description"
+		    android:text="外部クラス" />
+	
+		<Button
+		    style="@style/button"
+		    android:id="@+id/btnBookArrExt"
+		    android:text="Go!" />
+	</TableRow>
+
+</TableLayout>
